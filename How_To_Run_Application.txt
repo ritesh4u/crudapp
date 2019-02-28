@@ -1,0 +1,47 @@
+step 1:-
+	install angular CLI
+	
+	install json-server is fake REST API to test applications
+		using command
+			npm install -g json-server 
+		
+		
+step 2:-
+		 Create a db.json file in a directory.
+			which contain
+			
+				{
+				"articles": [
+								{
+									"id": 1,
+									"title": "Android AsyncTask Example",
+									"category": "Android"
+								}
+							]
+				} 
+		 
+		 after saving this file run this command
+		 
+		 json-server --watch db.json 
+
+step 3:-
+	create new project using command ng new 'app name'
+	
+step 4:-
+	after creation of project remove src folder from project
+	and extract zip file inside project folder (zip contain src folder which have all file related to crud operation)
+
+step 5:-
+		run project using ng serve
+	
+	NOTE :
+		if yo got this error
+				ERROR in node_modules/rxjs/internal/types.d.ts(81,44): error TS1005: ';' expected.
+				
+				 Go to package.json and modify "rxjs": "^6.0.0" to "rxjs": "6.0.0"
+				 
+				 Run npm update in your project.
+	
+
+	
+	
